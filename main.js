@@ -2,12 +2,12 @@
 // Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in JavaScript.
 // A:
 
-function max(){
+function max(a, b){
     // Your answer here
-}if (largest) {
-  return
+}if (a > b) {
+  return a;
 } else {
-
+  return b;
 }
 
 
@@ -15,8 +15,14 @@ function max(){
 // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
 // A:
 
-function maxOfThree(){
-    // Your answer here
+function maxOfThree(a, b, c){
+  if (a > b && a > c) {
+    return a;
+  }else if (b > c) {
+    return b;
+  }else {
+    return c;
+  }
 }
 
 
@@ -25,8 +31,13 @@ function maxOfThree(){
 // A:
 
 function isVowel(char){
-  // Your answer here
-}
+  char = char.lowercase();
+  if (char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u') {
+    return true;
+  } 
+  return false;
+
+  }
 
 
 // 4.
@@ -36,7 +47,7 @@ function isVowel(char){
      return (a + b);
 
 }
-sum (2, 4);
+
 
 
 
@@ -50,7 +61,7 @@ return (item1 + item2 + item3)/3;
 
 }
 
-avg(1, 2, 3);
+
 
 
 
@@ -61,17 +72,15 @@ function getLength() {
   var string = ("Hello World");
   return string.length;
 }
-getLength().
+
 
 // 7.
 // Write a function called `greaterThan` that takes two parameters
 // and returns `true` if the second parameter is greater than the first.
 // Otherwise the function should return `false`.
 // A:
-function greaterThan(item1, item2); {
-  var Item1 = 6;
-  var Item2 = 3;
-  if (Item2 > Item1);
+function greaterThan(item1, item2) {
+    if (Item2 > Item1);
     return true;
 }
 
@@ -83,9 +92,9 @@ function greaterThan(item1, item2); {
 // is the parameter that was passed in.
 // A:
   function greet(Name) {
-    return ("Hello, " + Name);
+    return "Hello," + " " + Name +"!";
   }
-  greet();
+
 
 // 9.
 // Write a function called `madlib` that takes 4 or more parameters (words).
@@ -95,12 +104,6 @@ function greaterThan(item1, item2); {
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
 // A:
-  function madLib() {
-    var person = "John";
-    var place = "Vegas";
-    var verb = "danced";
-    var adjective = "pretty";
-
-    return (person + ' went to' + place + ' and' + verb + ' with a' + adjective + ' car.');
+  function madLib(person, place, verb, adjective) {
+    return person + " " + "went to" + " " + place + " "  + "and" + " " + verb + " " + "with a" + " " + adjective + " " + "car.";
   }
- madLib();
