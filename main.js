@@ -34,7 +34,7 @@ function isVowel(char){
   char = char.lowercase();
   if (char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u') {
     return true;
-  } 
+  }
   return false;
 
   }
@@ -68,11 +68,11 @@ return (item1 + item2 + item3)/3;
 // 6.
 // Write a function called `getLength` that takes one parameter (a string) and returns the length
 // A:
-function getLength() {
-  var string = ("Hello World");
+function getLength(string) {
   return string.length;
 }
 
+// getLength('happy');
 
 // 7.
 // Write a function called `greaterThan` that takes two parameters
@@ -80,9 +80,12 @@ function getLength() {
 // Otherwise the function should return `false`.
 // A:
 function greaterThan(item1, item2) {
-    if (Item2 > Item1);
-    return true;
-}
+    if (Item2 > Item1){
+      return true;
+    }
+    return false;
+
+  }
 
 
 // 8.
